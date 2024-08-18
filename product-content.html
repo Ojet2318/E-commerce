@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products Center</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Add some basic CSS styles to make the layout more responsive */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+.main {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.product-container {
+width: calc(35.333% - 20px);
+margin: 10px;
+background-color: #fff;
+border: 0.75px solid red;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-container:hover{
+  padding:10px;
+  border:1px solid blue;
+  transition: 0.5s;
+  width:85%;
+}
+.product-img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 10px 10px 0 0;
+}
+.product-title {
+font-size: 18px;
+font-weight: bold;
+margin-right: 10px ;
+margin-left:10px;
+}
+@media (max-width: 768px) {
+.product-container {
+width: calc(50% - 20px);
+}
+}
+@media (max-width: 480px) {
+.product-container {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="banner"></div>
+</header>
+<br>
+<div class="SearchBar">
+    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+    </div>
+<main class="main">
+<div class="shop-content">
+<div class="product-container">
+<img src="product1.jpg" alt="" class="product-img">
+<h2 class="product-title">Daisy Granny Square Bucket Hat & Tube & Shorts Set</h2>
+</div>
+<div class="product-container">
+<img src="product2.jpg" alt="" class="product-img">
+<h2 class="product-title">Tank Top</h2>
+</div>
+<div class="product-container">
+<img src="product3.jpg" alt="" class="product-img">
+<h2 class="product-title">Armless Top + Shrug</h2>
+</div>
+<div class="product-container">
+<img src="product4.jpg" alt="" class="product-img">
+<h2 class="product-title">Butterfly Keyholder</h2>
+</div>
+<div class="product-container">
+<img src="product5.jpg" alt="" class="product-img">
+<h2 class="product-title">Crop Top</h2>
+</div>
+<div class="product-container">
+<img src="product6.jpg" alt="" class="product-img">
+<h2 class="product-title">Crop Vest Top</h2>
+</div>
+<div class="product-container">
+<img src="product7.jpg" alt="" class="product-img">
+<h2 class="product-title">Phone Pouch</h2>
+</div>
+<div class="product-container">
+<img src="product8.jpg" alt="" class="product-img">
+<h2 class="product-title">Twisted Ear Warmer</h2>
+</div>
+<div class="product-container">
+<img src="product9.jpg" alt="" class="product-img">
+<h2 class="product-title">Tote Bags</h2>
+</div>
+<div class="product-container">
+<img src="product10.jpg" alt="" class="product-img">
+<h2 class="product-title">Checkered Bucket Hat</h2>
+</div>
+<div class="product-container">
+<img src="product11.jpg" alt="" class="product-img">
+<h2 class="product-title">Scrunchies</h2>
+</div>
+<div class="product-container">
+<img src="product12.jpg" alt="" class="product-img">
+<h2 class="product-title">Shrug</h2>
+</div>
+<div class="product-container">
+<img src="product13.jpg" alt="" class="product-img">
+<h2 class="product-title">Beanie</h2>
+</div>
+<div class="product-container">
+<img src="product14.jpg" alt="" class="product-img">
+<h2 class="product-title">Daisy Granny Square Bucket Hat</h2>
+</div>
+<div class="product-container">
+<img src="product15.jpg" alt="" class="product-img">
+<h2 class="product-title">Checkered Jacket</h2>
+</div>
+<div class="product-container">
+<img src="product16.jpg" alt="" class="product-img">
+<h2 class="product-title">Baby Caps</h2>
+</div>
+<div class="product-container">
+<img src="product17.jpg" alt="" class="product-img">
+<h2 class="product-title">Covered Phone Pouch</h2>
+</div>
+<div class="product-container">
+<img src="product18.jpg" alt="" class="product-img">
+<h2 class="product-title">Crop Collard Top</h2>
+</div>
+<div class="product-container">
+<img src="product19.jpg" alt="" class="product-img">
+<h2 class="product-title">Earphones Case</h2>
+</div>
+<div class="product-container">
+<img src="product20.jpg" alt="" class="product-img">
+<h2 class="product-title">Mini Backpack</h2>
+</div>
+<div class="product-container">
+<img src="product21.jpg" alt="" class="product-img">
+<h2 class="product-title">Designer Bag</h2>
+</div>
+<div class="product-container">
+<img src="product22.jpg" alt="" class="product-img">
+<h2 class="product-title">Shirt</h2>
+</div>
+</div>
+</main>
+</div>
+<br>
+<a href="main-interface.html">
+<button class="btn" onclick="goBack()">Home</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+
+function goNext() {
+  window.history.forward();
+}
+</script>
+<style>
+.btn {
+font-size: 24px;
+padding: 10px 20px;
+margin: 20px;
+width: 150px;
+height: 100px;
+border-radius: 10px;
+background-color: #41B245;
+color: #fff;
+cursor: pointer;
+}
+
+@media (max-width: 600px) {
+.btn {
+font-size: 18px;
+padding: 5px 10px;
+margin: 10px;
+width: 40%;
+height: 50px;
+}
+}
+</style>
+<script src="main.js"></script>
+</body>
+</html>
+

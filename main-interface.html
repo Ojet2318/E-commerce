@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Interface</title>
+    <style>
+        /* Add your CSS styles here */
+        .logo {
+            margin-left: 50px;
+            margin-right: 20px;
+            float: left;
+            height:50px;
+        }
+        h1 {
+            margin-top: 20px;
+      
+        }
+        p{
+          font-size:15px;
+          margin-bottom:20px;
+          margin-left:120px;
+          margin-right:100px;
+          margin-top:-20px;
+          color:rebeccapurple;
+        }
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            float: right;
+            margin-right:20px;
+            margin-top:15px;
+        }
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin-bottom: 5px;
+        }
+        .hamburger span:last-child {
+            margin-bottom: 0;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            right: 0;
+            float:left;
+        }
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+        .menu a:hover {
+            background-color: rebeccapurple;
+            transition:0.7s ;
+        }
+        .menu.show {
+            display: block;
+            background-color:white;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            h1 {
+                margin-top: 10px;
+            }
+            .menu {
+                width: 20%;
+                padding: 20px;
+                text-align: center;
+            }
+            .menu a {
+                font-size: 18px;
+            }
+        }
+        h2{
+          font-size:40px;
+          margin-top:180px;
+          color:turquoise;
+          }
+        body{
+          background-color:whitesmoke;
+        }
+        .banner {
+			background-image: url('logo(1).png');
+			background-size: cover;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: red;
+			border:1px solid red;
+		}
+.menu
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 36px;
+cursor: pointer;
+color: red;
+float:right;
+margin-top:-20px;
+}
+.close-btn:hover {
+color: yellow;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-interface">
+   <div class="banner"></div>
+<div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div class="menu">
+  <div class="close-btn">&times;</div>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="product-content.html">Products</a>
+  <a href="contact-content.html">Contact</a>
+</div>
+
+
+    </div>
+    <h2>CONTACT US NOW FOR YOUR ORDERS</h2>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+const closeBtn = document.querySelector('.close-btn');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('show');
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: palevioletred;
+        }
+        .colorful-text {
+            font-size: 60px;
+            text-align: center;
+        }
+        .a { color: red; }
+        .d { color: blue; }
+        .e { color: green; }
+        .m { color: goldenrod; }
+        .i { color: purple; }
+        .c { color: orange; }
+        .r { color: pink; }
+        .o { color: brown; }
+        .c { color: grey; }
+        .h { color: turquoise; }
+        .e { color: silver; }
+        .t { color: gold; }
+        .s { color: crimson; }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes circular {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .colorful-text {
+            animation: bounce 2s infinite, circular 10s linear infinite;
+        }
+        @media (max-width: 600px) {
+            .colorful-text {
+                font-size: 30px;
+            }
+        }
+        @media (max-width: 400px) {
+            .colorful-text {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="colorful-text">
+        <span class="a">A</span>
+        <span class="d">D</span>
+        <span class="e">E</span>
+        <span class="m">M</span>
+        <span class="i">I</span>
+        <br>
+        <span class="c">C</span>
+        <span class="r">R</span>
+        <span class="o">O</span>
+        <span class="c">C</span>
+        <span class="h">H</span>
+        <span class="e">E</span>
+        <span class="t">T</span>
+        <span class="s">S</span>
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = 'main-interface.html';
+        }, 10000);
+    </script>
+</body>
+</html>
